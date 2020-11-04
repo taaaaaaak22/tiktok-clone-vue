@@ -1,9 +1,29 @@
 <template>
   <footer class="Footer">
     <ul class="Footer__list">
-      <li v-for="(item, index) in items" :key="index" class="Footer__item">
+      <li class="Footer__item">
         <a href="Footer__link">
-          {{ item.text }}
+          <HomeIcon />
+        </a>
+      </li>
+      <li class="Footer__item">
+        <a href="Footer__link">
+          <SearchIcon />
+        </a>
+      </li>
+      <li class="Footer__item">
+        <a href="Footer__link">
+          <CreateIcon />
+        </a>
+      </li>
+      <li class="Footer__item">
+        <a href="Footer__link">
+          <MessageIcon />
+        </a>
+      </li>
+      <li class="Footer__item">
+        <a href="Footer__link">
+          <PersonIcon />
         </a>
       </li>
     </ul>
@@ -11,21 +31,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, defineAsyncComponent } from 'vue'
+import { VueComponent as HomeIcon } from '../../assets/icons/home.svg'
+import { VueComponent as SearchIcon } from '../../assets/icons/search.svg'
+import { VueComponent as MessageIcon } from '../../assets/icons/message.svg'
+import { VueComponent as PersonIcon } from '../../assets/icons/person.svg'
+import { VueComponent as CreateIcon } from '../../assets/icons/create.svg'
 
 export default defineComponent({
   name: 'Footer',
-  setup() {
-    const items = [
-      {
-        name: 'home',
-        text: 'レコメンド',
-      },
-    ]
-
-    return {
-      items,
-    }
+  components: {
+    HomeIcon,
+    SearchIcon,
+    MessageIcon,
+    PersonIcon,
+    CreateIcon,
   },
 })
 </script>
@@ -35,6 +55,9 @@ export default defineComponent({
   &__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 16px;
   }
 }
 </style>
