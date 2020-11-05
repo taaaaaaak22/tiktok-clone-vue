@@ -2,6 +2,7 @@
   <div class="Video">
     <Tab :items="tabItems" class="Video__tab" />
     <video src=""></video>
+    <ButtonList class="Video__buttonList" />
     <Info
       :name="video.user.name"
       :description="video.description"
@@ -16,11 +17,13 @@
 import { defineComponent, PropType } from 'vue'
 import Tab from '../../CommonPresentationals/Tab.vue'
 import Info from './Parts/Info.vue'
+import ButtonList from './Parts/ButtonList.vue'
 
 export default defineComponent({
   components: {
     Tab,
     Info,
+    ButtonList,
   },
   setup() {
     const tabItems = [
@@ -80,6 +83,11 @@ export default defineComponent({
     bottom: 70px;
     text-align-last: left;
     padding-left: 10px;
+  }
+  &__buttonList {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
   }
 }
 </style>
