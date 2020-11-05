@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Video from '../Presentationals/Video.vue'
+import Video from '../Presentationals/Video/Index.vue'
 import Footer from '../Presentationals/Footer.vue'
 
 export default defineComponent({
@@ -22,6 +22,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .App {
   &__video {
+    padding-bottom: 60px;
   }
   &__footer {
     position: absolute;

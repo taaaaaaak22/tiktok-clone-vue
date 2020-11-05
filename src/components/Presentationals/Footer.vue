@@ -1,37 +1,39 @@
 <template>
   <footer class="Footer">
-    <ul class="Footer__list">
-      <li class="Footer__item">
-        <a href="Footer__link">
-          <HomeIcon />
-        </a>
-      </li>
-      <li class="Footer__item">
-        <a href="Footer__link">
-          <SearchIcon />
-        </a>
-      </li>
-      <li class="Footer__item">
-        <a href="Footer__link">
-          <CreateIcon />
-        </a>
-      </li>
-      <li class="Footer__item">
-        <a href="Footer__link">
-          <MessageIcon />
-        </a>
-      </li>
-      <li class="Footer__item">
-        <a href="Footer__link">
-          <PersonIcon />
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <ul class="Footer__list">
+        <li class="Footer__item">
+          <a href="Footer__link">
+            <HomeIcon />
+          </a>
+        </li>
+        <li class="Footer__item">
+          <a href="Footer__link">
+            <SearchIcon />
+          </a>
+        </li>
+        <li class="Footer__item">
+          <a href="Footer__link">
+            <CreateIcon />
+          </a>
+        </li>
+        <li class="Footer__item">
+          <a href="Footer__link">
+            <MessageIcon />
+          </a>
+        </li>
+        <li class="Footer__item">
+          <a href="Footer__link">
+            <PersonIcon />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 </template>
 
 <script lang="ts">
-import { defineComponent, defineAsyncComponent } from 'vue'
+import { defineComponent } from 'vue'
 import { VueComponent as HomeIcon } from '../../assets/icons/home.svg'
 import { VueComponent as SearchIcon } from '../../assets/icons/search.svg'
 import { VueComponent as MessageIcon } from '../../assets/icons/message.svg'
