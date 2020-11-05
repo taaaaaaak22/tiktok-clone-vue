@@ -33,7 +33,6 @@ import { VueComponent as FavoriteIcon } from '../../../../assets/icons/favorite.
 import { VueComponent as MessageIcon } from '../../../../assets/icons/comment.svg'
 import { VueComponent as ShareIcon } from '../../../../assets/icons/share.svg'
 import { VueComponent as TrackIcon } from '../../../../assets/icons/track.svg'
-import { VueComponent as PlusIcon } from '../../../../assets/icons/plus.svg'
 
 export default defineComponent({
   components: {
@@ -41,7 +40,6 @@ export default defineComponent({
     MessageIcon,
     ShareIcon,
     TrackIcon,
-    PlusIcon,
   },
 })
 </script>

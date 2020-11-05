@@ -54,6 +54,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .Footer {
+  background-color: #000;
   &__list {
     display: flex;
     justify-content: space-between;
